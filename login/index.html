@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container active">
+        <div class="cadastro active1">
+            <h1 class="to-do-list">To do list</h1>
+            <h1>Crie sua conta</h1>
+            <div class="social-icon">
+                <a href="#" class="social"><i class="fab fa-facebook icon-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-twitter icon-t"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin icon-l"></i></a>
+            </div>
+            
+            <div class="form-cadastro-message"></div>
+            <form action="../backend/usuarios/store.php" method="POST" class="form-cadastro">
+                <div class="input-control">
+                    <input type="text" name="nome" class="input-name" placeholder="" id="completename">
+                    <label for="completename">Nome completo</label>
+                </div>
+                <div class="input-control">
+                    <input type="email" name="email" class="input-email" placeholder="">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-control">
+                    <input type="password" name="senha" class="input-pass" placeholder="">
+                    <label for="">Senha</label>
+                </div>
+                <button class="submit" type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <h1 class="to-do-list">To do list</h1>
+            <h1>Acesse sua conta</h1>
+            <div class="social-icon">
+                <a href="#" class="social"><i class="fab fa-facebook icon-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-twitter icon-t"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin icon-l"></i></a>
+            </div>
+
+            <div class="form-messages"></div>
+            <small class="forgot">Insira seus dados baixo</small>
+            <form action="../backend/usuarios/login.php" method="POST" class="form-login">
+                <div class="input-control">
+                    <input type="email" name="email" class="input-login" placeholder="">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-control">
+                    <input type="password" name="senha" class="input-passlogin" placeholder="">
+                    <label for="">Senha</label>
+                </div>
+
+                <small class="forgot"><a href="#">Esqueceu sua senha?</a></small>
+                <button class="submit1" type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <div class="panel-active">
+            <div class="cadastro-content">
+                <h1>Que bom te ver novamente!</h1>
+                <p>Suas tarefas sentiram falta, faça login para continuar de onde você parou.</p>
+                <p>Ou</p>
+                <button class="signIn">Cadastre-se</button>
+            </div>
+
+            <div class="login-content">
+                <h1>Já faz parte do time?</h1>
+                <p>Se você já tem uma conta, clique no botão abaixo para acessar suas tarefas.</p>
+                <button class="signUp">Entrar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="cadastros.js"></script>
+</body>
+
+</html>
